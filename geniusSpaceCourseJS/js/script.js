@@ -835,3 +835,73 @@ const message = 'Welcome to Bahamas!';
 // infoCar.showInfo.call(car2);
 
 // infoCar.showInfo.apply(car2);
+
+// const studentObject = {
+// 	name: 'name',
+// 	speciality: 'speciality',
+// 	avgMark: 1,
+// 	countMissedLectures: 1,
+// 	studentInfo: function () {
+// 		console.log(`Student name is ${this.name}`);
+// 		console.log(`Student speciality is ${this.speciality}`);
+// 		console.log(`Student average Mark is ${this.avgMark}`);
+// 		console.log(`Student has missed ${this.countMissedLectures} lectures`);
+// 	},
+// };
+
+// const student1 = {
+// 	name: 'Ivan',
+// 	speciality: 'Svarshik',
+// 	avgMark: 5,
+// 	countMissedLectures: 15,
+// };
+
+// const student2 = {
+// 	name: 'Sasha',
+// 	speciality: 'Elektrik',
+// 	avgMark: 3,
+// 	countMissedLectures: 25,
+// };
+
+// const student3 = {
+// 	name: 'Nata',
+// 	speciality: 'Teacher',
+// 	avgMark: 12,
+// 	countMissedLectures: 0,
+// };
+
+// studentObject.studentInfo.bind(student1)();
+
+// ============================
+
+// const shopCalc = function (name, price, amount) {
+// 	let cost = amount * price;
+// 	console.log(`You buying ${name}, it will cost you ${cost} griven`);
+// };
+
+// shopCalc('banana', 30, 4.5);
+// shopCalc('cherry', 58, 1.3);
+
+// ============================
+
+// const isLang = {
+// 	showLang() {
+// 		console.log('Мова програмування: ', this.name);
+// 	},
+// };
+
+// const htmlcont = {
+// 	name: 'HTML',
+// };
+
+// const csscont = {
+// 	name: 'CSS',
+// };
+
+// document
+// 	.querySelector('#html')
+// 	.addEventListener('click', isLang.showLang.bind(htmlcont));
+
+// document
+// 	.querySelector('#css')
+// 	.addEventListener('click', isLang.showLang.bind(csscont));
