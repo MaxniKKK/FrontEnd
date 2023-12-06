@@ -905,3 +905,148 @@ const message = 'Welcome to Bahamas!';
 // document
 // 	.querySelector('#css')
 // 	.addEventListener('click', isLang.showLang.bind(csscont));
+
+// JS L26
+
+// Процедурне програмування
+
+// const summ = 20000;
+// const month = 12;
+// const p = 1000;
+
+// const credit = (sum, date, p) => {
+// 	return sum + p * date;
+// };
+
+// console.log(credit(summ, month, p));
+
+// ООП - об'єктно-орієнтоване програмування
+
+// const credit = {
+// 	summ: 20000,
+// 	month: 12,
+// 	p: 1000,
+// 	result() {
+// 		return this.summ + this.p * this.month;
+// 	},
+// };
+
+// console.log(credit.result());
+
+// Класи
+
+// class Bank {
+// 	static type = 'Privat';
+// 	constructor(options) {
+// 		this.summ = options.summ;
+// 		this.month = options.month;
+// 		this.p = options.p;
+// 	}
+// 	credit() {
+// 		return console.log('i am privat');
+// 	}
+// }
+
+// const userBank = new Bank({ summ: 30000, month: 5, p: 500 });
+
+// userBank.credit();
+// console.log(Bank.type);
+
+// class NewBank extends Bank {
+// 	constructor(options) {
+// 		super(options);
+// 		this.card = options.card;
+// 	}
+// 	credit() {
+// 		super.credit();
+// 		return console.log('i am aval');
+// 	}
+// }
+
+// const aval = new NewBank({
+// 	summ: 30000,
+// 	month: 5,
+// 	p: 500,
+// 	card: true,
+// });
+
+// console.log(aval.credit());
+
+// get & set
+
+// class User {
+// 	constructor(props) {
+// 		this.name = props.name;
+// 	}
+// 	firstName = '';
+// 	lastName = '';
+// 	age = '';
+// 	city = '';
+
+// 	set name(newName) {
+// 		const nameRow = newName.split(' ');
+// 		this.firstName = nameRow[0];
+// 		this.lastName = nameRow[1];
+// 	}
+
+// 	get name() {
+// 		return `First Name: ${this.firstName} last name: ${this.lastName}`;
+// 	}
+// }
+
+// const Kris = new User({
+// 	name: 'Kristina Malitowska',
+// });
+
+// console.log(Kris);
+
+// Prototypes
+
+// const a = [1, 2, 3];
+// console.log(a);
+
+// const a = {
+// 	x: 1,
+// 	y: 2,
+// };
+
+// const b = Object.create(a);
+
+// console.log(b.hasOwnProperty('x'));
+
+// const Manager = function (name, sales) {
+// 	this.name = name;
+// 	this.sales = sales;
+// };
+
+// const ann = new Manager('Anna', 5);
+// const den = new Manager('Denchik', 99);
+
+// Manager.prototype.sale = function () {
+// 	this.sales += 1;
+// };
+
+// ann.sale();
+// console.log(ann.sales);
+
+// console.dir(Manager);
+
+// class CoffeeMachine {
+// 	_water = 0;
+// 	#waterLimit = 500;
+// 	constructor(power) {
+// 		this.power = power;
+// 	}
+// 	set waterAmount(value) {
+// 		if (value < 0) {
+// 			value = 0;
+// 		}
+// 		this._water = value;
+// 	}
+// }
+
+// let coffeeMachine = new CoffeeMachine(100);
+
+// coffeeMachine.waterAmount = -20;
+
+// console.log(coffeeMachine);
