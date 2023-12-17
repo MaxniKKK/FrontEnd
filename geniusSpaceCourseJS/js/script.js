@@ -44,7 +44,7 @@
 
 //***7**
 //дізнатись довжину message
-const message = 'Welcome to Bahamas!';
+// const message = 'Welcome to Bahamas!';
 // console.log(message.length)
 
 //***8**
@@ -1050,3 +1050,142 @@ const message = 'Welcome to Bahamas!';
 // coffeeMachine.waterAmount = -20;
 
 // console.log(coffeeMachine);
+
+// function validatePIN(pin) {
+// 	if (
+// 		(pin.length === 4 || pin.length === 6) &&
+// 		!/^[0-9]+$/.test(pin) === false
+// 	) {
+// 		return true;
+// 	}
+// 	return false;
+// }
+
+// // console.log(validatePIN('1234'));
+// // console.log(validatePIN('555567'));
+// console.log(validatePIN('1234'));
+
+// console.log(!/^[0-9]+$/.test('1234'));
+
+// class CoffeeMachine {
+// 	_water = 0;
+// 	#waterLimit = 500;
+// 	constructor(power) {
+// 		this.power = power;
+// 	}
+// 	set waterAmount(value) {
+// 		if (value < 0) {
+// 			value = 0;
+// 		}
+// 		this._water = value;
+// 	}
+// }
+
+// class Abonent {
+// 	name = 'name';
+// 	number = 0;
+// 	constructor(phone) {
+// 		this.phone = phone;
+// 	}
+// 	set phoneAndNumber(value) {
+// 		this.phone = phone;
+// 		this.number = number;
+// 	}
+
+// 	get;
+// }
+
+// class CircleBox {
+// 	constructor(selector) {
+// 		this.$el = document.querySelector(selector);
+// 	}
+
+// 	hide() {
+// 		this.$el.style.display = 'none';
+// 	}
+
+// 	show() {
+// 		this.$el.style.display = 'block';
+// 	}
+// }
+
+// class CircleItem extends CircleBox {
+// 	constructor(options) {
+// 		super(options.selector);
+// 		this.$el.style.width = options.size + 'px';
+// 		this.$el.style.height = options.size + 'px';
+// 		this.$el.style.borderRadius = '50%';
+// 		this.$el.style.background = options.color;
+// 	}
+// }
+
+// const CircleRed = new CircleItem({
+// 	selector: '#circleRed',
+// 	color: 'red',
+// 	size: 50,
+// });
+
+// const CircleYellow = new CircleItem({
+// 	selector: '#circleYellow',
+// 	color: 'yellow',
+// 	size: 70,
+// });
+
+// const CircleGreen = new CircleItem({
+// 	selector: '#circleGreen',
+// 	color: 'green',
+// 	size: 30,
+// });
+
+// function Car(name, color) {
+// 	this.name = name;
+// 	this.color = color;
+// }
+
+// Car.prototype.message = function () {
+// 	console.log(`${this.name} is ${this.color} color `);
+// };
+
+// Car.prototype.start = function () {
+// 	console.log(`${this.name} is wroom wroom ${this.color}!`);
+// };
+
+// const BMW = new Car('BMW', 'RED');
+// const OPEL = new Car('Opel', 'BLUE');
+
+//
+// Array1
+// const myArray = ['Pasta', 'Deryni', 'Grenki'];
+// myArray[0] = 'Pizza';
+// myArray[1] = 'Sushi';
+// myArray.unshift('Pasta');
+// console.log(myArray);
+
+// Array2
+// let myString = 'Ryu+Ken+Chun-Li+Cammy+Guile+Sakura+Sagat+Juri';
+// let myArray = myString.split('+');
+// let arrayLength = myArray.length;
+// let lastItem = myArray[arrayLength - 1];
+// console.log(lastItem);
+
+// Array3
+// let myArray = ['Ryu', 'Ken', 'Chun-Li', 'Cammy', 'Guile', 'Sakura', 'Sagat', 'Juri'];
+// myArray.pop();
+// myArray.push('Olya', 'Denys');
+// let finalArray = [];
+// myArray.forEach((myArr, i) => {
+// 	let newArr = `${myArr} (${i})`;
+// 	finalArray.push(newArr);
+// 	console.log(newArr);
+// });
+
+// let finalString = finalArray.join('-');
+
+// Array4
+//
+// const birds = ['Parrots', 'Falcons', 'Eagles', 'Emus', 'Caracaras', 'Egrets'];
+// let indexOfEagles = birds.indexOf('Eagles', 0);
+// birds.splice(indexOfEagles, 1);
+
+// const filterValue = 'E';
+// const eBirds = birds.filter((option) => option.startsWith(filterValue));
