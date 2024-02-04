@@ -1189,3 +1189,100 @@
 
 // const filterValue = 'E';
 // const eBirds = birds.filter((option) => option.startsWith(filterValue));
+
+// let elem = document.getElementById('ELEM');
+
+// elem.style.background = 'green';
+
+// let elements = document.querySelectorAll('ul>li:last-child');
+
+// for (element of elements) {
+//     console.log(element);
+// }
+
+// let element = document.querySelector('li');
+// console.log(element);
+
+// let element = document.getElementsByTagName('div');
+// console.log(element);
+
+// let textHidden = document.getElementById('textHidden');
+// textHidden.hidden = false;
+
+// let message = document.getElementById('message');
+// console.log(message.value);
+
+// let text = document.querySelector('.text-message');
+// // console.log(text.textContent);
+
+// text.textContent = 'Hello, Krasavchik';
+
+// let btn = document.querySelector('.button');
+// btn.style.backgroundColor = 'green';
+
+// let text = document.querySelector('#p_text');
+
+// text.classList.remove('red');
+
+// console.log(text.classList.contains('red'));
+
+// text.classList.add('yellow');
+
+// console.log(text.classList.contains('yellow'));
+
+// let image = document.querySelector('.image');
+// console.log(image.hasAttribute('src'));
+
+// const item = document.createElement('a');
+
+// item.href = '#';
+// item.classList.add('btn');
+// item.textContent = '3';
+
+// const nav = document.querySelector('.nav');
+// nav.appendChild(item);
+
+// const heading = document.createElement('h1');
+// heading.textContent = 'Hello';
+// heading.style.size = '160px';
+
+// const container = document.querySelector('.container');
+// container.insertBefore(heading, nav);
+
+// const text = document.querySelector('.text');
+// const parent = document.querySelector('.parent');
+
+// const clone = text.cloneNode(true);
+// parent.appendChild(clone);
+
+// const container = document.querySelector('.container');
+// const text = `<p>Sorry</p>`;
+
+// container.innerHTML += text;
+
+// const list = document.querySelector('.list');
+
+// list.insertAdjacentHTML('beforeEnd', '<p>afterEnd</p>');
+
+// const getElement = document.querySelector('[data-widget-name]');
+// let attr = getElement.textContent;
+// alert(attr);
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// function filtering(arr) {
+//     let filteredArr = [];
+//     arr.map((num) => (num % 2 == 0 ? filteredArr.push(num) : null));
+//     return filteredArr;
+// }
+
+// alert(filtering(arr));
+
+function squareNum(arr) {
+    for (num of arr) {
+        num **= 2;
+        alert(num);
+    }
+    return;
+}
+
+squareNum(arr);
