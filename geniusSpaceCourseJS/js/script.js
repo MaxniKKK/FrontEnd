@@ -1268,7 +1268,7 @@
 // let attr = getElement.textContent;
 // alert(attr);
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 // function filtering(arr) {
 //     let filteredArr = [];
 //     arr.map((num) => (num % 2 == 0 ? filteredArr.push(num) : null));
@@ -1277,12 +1277,12 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // alert(filtering(arr));
 
-function squareNum(arr) {
-    for (num of arr) {
-        num **= 2;
-        alert(num);
-    }
-    return;
-}
+// function squareNum(arr) {
+//     for (num of arr) {
+//         num **= 2;
+//         alert(num);
+//     }
+//     return;
+// }
 
-squareNum(arr);
+// squareNum(arr);
